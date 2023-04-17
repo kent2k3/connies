@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root {
+    --red: #ff3838;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background: var(--red);
+    color: white;
+}
+
+.navbar {
+    z-index: 999;
+}
+
+.nav-item {
+    font-size: 20px;
+}
+
+.logo img {
+    text-decoration: none;
+    width: 100px;
+    margin-left: 25px;
+}
+
+.navbar-nav {
+    font-size: 1.5rem;
+    gap: 5rem;
+    margin-top: 50px;
+    margin-right: 25px;
+    z-index: 999;
+}
+
+.text h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.card {
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card img:hover {
+    transform: scale(1.08);
+    text-decoration: none;
+}
+
+.card-content {
+    padding: 10px;
+    text-decoration: none;
+}
+
+.card-content h3 {
+    margin-top: 0;
+    text-decoration: none;
+}
+
+.card-content p {
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.card-content button {
+    display: block;
+    margin: 0 auto;
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(224, 81, 5);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.2s all;
+    width: 180px;
+    text-decoration: none;
+}
+
+.card-content button:hover {
+    transform: scale(1.08);
+    text-decoration: none;
+}
+
+.card {
+    width: 200px;
+    /* adjust as needed */
+    height: 300px;
+    /* adjust as needed */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+}
+
+.card-body {
+    padding: 10px;
+    text-decoration: none;
+}
+
+.card-body h5 {
+    margin: 0;
+    font-size: 8px;
+    text-decoration: none;
+}
+
+.card-body p {
+    margin: 10px 0;
+}
+
+.card-body button {
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.button {
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80px;
+    margin: 0;
+    color: #120505;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.card-container .card .price {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--red);
+    color: #fff;
+    font-size: 1rem;
+    padding: .3rem 1rem;
+    border-radius: .4rem;
+}
+
+.heading {
+    text-align: center;
+    font-size: 5.5rem;
+    padding: 1rem;
+    color: #666;
+}
+
+.heading span {
+    color: var(--red);
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+
+
+section {
+    width: 800%;
+    display: inline-block;
+    background: transparent;
+    height: 10vh;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.footer-distributed {
+    background: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+    margin-top: 10rem;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 40%;
+}
+
+/* The company logo */
+
+#footer-logo {
+    height: 200px;
+    width: auto;
+}
+
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #110101;
+    margin: 20px 0 12px;
+    padding: 20px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    font-weight: 400;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #222;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #f6f0f0;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #120505;
+    font-weight: 400;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: lightseagreen;
+    text-decoration: none;
+    ;
+}
+
+.footer-distributed .footer-links a:before {
+    content: "|";
+    font-weight: 300;
+    font-size: 20px;
+    left: 0;
+    color: #958d8d;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+    content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+
+    font-size: 20px;
+    color: #eddede;
+    text-align: center;
+    line-height: 35px;
+
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+    .footer-distributed {
+        font: bold 14px sans-serif;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+
+}
