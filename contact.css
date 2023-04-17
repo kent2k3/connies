@@ -25,3 +25,7 @@ body {
     margin-right: 25px;
     z-index: 999;
 }
+
+.navbar-items {
+    font-size: 20px;
+}
