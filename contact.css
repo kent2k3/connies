@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    z-index: 999;
+}
+
+.logo img {
+    text-decoration: none;
+    width: 100px;
+    margin-left: 25px;
+}
+
+.navbar-nav {
+    font-size: 1.5rem;
+    gap: 5rem;
+    margin-top: 50px;
+    margin-right: 25px;
+    z-index: 999;
+}
