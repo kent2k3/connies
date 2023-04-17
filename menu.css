@@ -8,12 +8,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box 
-    outline: none;
-    border: none;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: all .2s linear;
+    box-sizing: border-box;
 }
 
 *::selection {
@@ -244,7 +239,8 @@ section {
 
 .footer-distributed .footer-links {
     color: #110101;
-    margin: 20px 0 12px padding: 20px;
+    margin: 20px 0 12px;
+    padding: 20px;
 }
 
 .footer-distributed .footer-links a {
