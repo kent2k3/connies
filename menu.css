@@ -12,7 +12,7 @@
 
 *::selection {
     background: var(--red);
-    color: #fff;
+    color: white;
 }
 
 .navbar {
