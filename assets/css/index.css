@@ -10,10 +10,12 @@
   
 .navbar-toggler {
     border-color: transparent;
+    color: white;
 }
 
 .navbar-toggler:hover {
     border-color: transparent;
+    color: white;
 }
   
 .nav-link,
