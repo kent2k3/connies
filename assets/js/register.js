@@ -8,14 +8,14 @@
       
         // Your web app's Firebase configuration
         const firebaseConfig = {
-          apiKey: "AIzaSyD7kTOAoSTo9vPvHiDIDQKP0uonvn5FY5Y",
-          authDomain: "connies-a60db.firebaseapp.com",
-          databaseURL: "https://connies-a60db-default-rtdb.firebaseio.com",
-          projectId: "connies-a60db",
-          storageBucket: "connies-a60db.appspot.com",
-          messagingSenderId: "489988473507",
-          appId: "1:489988473507:web:ea21ceec5c661f23963516"
-        };
+            apiKey: "AIzaSyAAVlB5up_ViioxZnv1Nef-ZTxQLDGvz4w",
+            authDomain: "connies-lutong-ulam.firebaseapp.com",
+            databaseURL: "https://connies-lutong-ulam-default-rtdb.firebaseio.com",
+            projectId: "connies-lutong-ulam",
+            storageBucket: "connies-lutong-ulam.appspot.com",
+            messagingSenderId: "605315693637",
+            appId: "1:605315693637:web:6df00422df8b9eb6ed772c"
+          };
       
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
