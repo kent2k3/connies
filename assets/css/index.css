@@ -1,6 +1,6 @@
 .navbar {
     background: white;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -25,6 +25,6 @@
 }
 
 .nav-link:hover {
-    color: #cf1020;
+    color: #fd761f;
     text-decoration: none;
 }
