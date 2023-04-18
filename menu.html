@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/menufinal.css">
     <title>Menu | Connie's Lutong Ulam</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 </head>
 <body>
     <!--NavBar Start-->
@@ -41,6 +42,10 @@
             <a class="nav-link" href="contact.html">Contact Us</a>
           </li>
         </ul>
+        <div class="cart">
+            <i class="bi bi-cart3"></i>
+            <div id="cartAmount" class="cartAmount">0</div>
+        </div>
       </div>
     </div>
   </nav>
@@ -54,8 +59,59 @@
                            <!--Breakfast--->
 
                            <h3 class="break">Rise and Shine </h3>
+
+                           <div class="shop" id="shop">
+        
+                            <!-- <div class="item">
+                                <img src="img-1.jpg" alt="" width="220">
+                                <div class="details">
+                                    <h3>Office Shirt</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                    <div class="price-quantity">
+                                        <h2>$ 100</h2>
+                                        <div class="buttons">
+                                            <i class="bi bi-dash-lg"></i>
+                                            <div class="quantity">0</div>
+                                            <i class="bi bi-plus-lg"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img-1.jpg" alt="" width="220">
+                                <div class="details">
+                                    <h3>CasT Shirt</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                    <div class="price-quantity">
+                                        <h2>$ 25</h2>
+                                        <div class="buttons">
+                                            <i class="bi bi-dash-lg"></i>
+                                            <div class="quantity">0</div>
+                                            <i class="bi bi-plus-lg"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img-1.jpg" alt="" width="220">
+                                <div class="details">
+                                    <h3>Mens Suit</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                    <div class="price-quantity">
+                                        <h2>$ 300</h2>
+                                        <div class="buttons">
+                                            <i class="bi bi-dash-lg"></i>
+                                            <div class="quantity">0</div>
+                                            <i class="bi bi-plus-lg"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            
+                        </div>
+
     
-                      <div class="menu">
+                      <!-- <div class="menu">
 
                         <div class="food-items">
                             <img src="food/avocadotoast.png">
@@ -64,7 +120,11 @@
                                     <h5>Avocado Toast</h5>
                                     <h5 class="price"> ₱150 </h5>
                                 </div>
-                                <button>Add To Cart</button>
+                                <div class="buttons">
+                                    <i class="bi bi-dash-lg"></i>
+                                    <div class="quantity">0</div>
+                                    <i class="bi bi-plus-lg"></i>
+                                </div>
                             </div>
                         </div>
                 
@@ -189,7 +249,7 @@
                           </div>
                          <button>Add To Cart</button>
                       </div>
-                  </div>
+                  </div> -->
 
           </div>
 
@@ -596,7 +656,7 @@
     </div>
     <!-- Copyright -->
   </footer>
-
+  <script src="assets/js/cart.js"></script>
 </body>
 
 </html>
