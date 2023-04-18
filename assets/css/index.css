@@ -43,3 +43,16 @@
     color: #fd761f;
     transform: scale(1.2);
 }
+
+.section-heading {
+    color:black
+}
+
+#learnmore {
+    text-decoration: none;
+    color: white;
+}
+
+#learnmore:hover {
+    color: #fd761f;
+}
