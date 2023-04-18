@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Connie's Lutong Bahay</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="menufinal.css">
+  
+ </head>
+
+    
+<body>
+
+ <!-- Messenger Chat Plugin Code -->
+ <div id="fb-root"></div>
+
+ <!-- Your Chat Plugin code -->
+ <div id="fb-customer-chat" class="fb-customerchat">
+ </div>
+
+ <script>
+   var chatbox = document.getElementById('fb-customer-chat');
+   chatbox.setAttribute("page_id", "1183488598450605");
+   chatbox.setAttribute("attribution", "biz_inbox");
+ </script>
+
+ <!-- Your SDK code -->
+ <script>
+   window.fbAsyncInit = function() {
+     FB.init({
+       xfbml            : true,
+       version          : 'v16.0'
+     });
+   };
+
+   (function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+ </script>
+
+
+      <!--Navbar--->
+      <div class="superNav border-bottom py-2 bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 centerOnMobile">
+              <span class="d-none d-lg-inline-block d-md-inline-block d-sm-inline-block d-xs-none me-3 "><i class="bi bi-envelope-fill w3-text-orange"></i><strong> connies@gmail.com</strong></span>
+              <span class="me-3"><i class="bi bi-telephone-fill w3-text-orange"></i> <strong>+63 995-941-3733</strong></span>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light p-3 shadow-sm">
+        <div class="container">
+          <a class="navbar-brand w3-text-orange" href="index.html"><i class="bi bi-shop-window"></i> <strong>CONNIE'S</strong></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+                <div class="mx-auto my-3 d-lg-none d-sm-block d-xs-block w3-hide-small">
+                            <div class="input-group">
+                              <span class="border-warning input-group-text bg-warning text-white"><i class="fa-solid fa-magnifying-glass"></i></span>
+                              <input type="text" class="form-control border-warning" style="color:#7a7a7a">
+                              <button class="btn btn-warning text-white">Search</button>
+                            </div>
+                          </div>
+                          <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                            <div class="ms-auto d-none d-lg-block">
+                              <div class="input-group">
+              
+                              </div>
+                            </div>
+                            <ul class="navbar-nav ms-auto ">
+                            
+                              <li class="nav-item">
+                                <a class="nav-link mx-2 text-uppercase" href="index.html">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link mx-2 text-uppercase" href="aboutUS.html">ABOUT</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link mx-2 text-uppercase" href="pageMenu.html">MENU</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link mx-2 text-uppercase" href="catering.html">CATERING</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link mx-2 text-uppercase" href="contactus.html">CONTACT US</a>
+                              </li>
+                            </ul>
+                            <ul class="navbar-nav ms-auto">
+                              <li class="nav-item">
+                                <a class="nav-link mx-2 text-uppercase" href="#"><i class="bi bi-cart"></i> Cart</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link mx-2 text-uppercase" href="#"><i class="bi bi-person-circle"></i> Account</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+
+                         <!--End of Navbar--->
+
+                         <div class="heading">
+                          <h3>&mdash; OUR MENU &mdash; </h3>
+
+                            
+                          </div>
+
+                          <div id="search-container">
+                            <input
+                              type="search"
+                              id="search-input"
+                              placeholder="Search menu item name here.."
+                            />
+                            <button id="search">Search</button>
+                          </div>
+                          <div id="buttons">
+                            <button class="button-value" onclick="filterProduct('all')">All</button>
+                            <button class="button-value" onclick="filterProduct('lunch')">
+                              Specialties
+                            </button>
+                            <button class="button-value" onclick="filterProduct('dinner')">
+                              Dinner
+                            </button>
+                            <button class="button-value" onclick="filterProduct('snacks')">
+                              Sweets & Snacks
+                            </button>
+                            <button class="button-value" onclick="filterProduct('beverages')">
+                              Beverages
+                            </button>
+                          </div>
+
+
+
+                           <!--Breakfast--->
+
+                           <h3 class="break">Rise and Shine </h3>
+    
+                      <div class="menu">
+
+                        <div class="food-items">
+                            <img src="food/avocadotoast.png">
+                            <div class="details">
+                                <div class="details-sub">
+                                    <h5>Avocado Toast</h5>
+                                    <h5 class="price"> ₱150 </h5>
+                                </div>
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                
+                        <div class="food-items">
+                            <img src="food/scrambled.png">
+                            <div class="details">
+                                <div class="details-sub">
+                                    <h5>Scrambled Eggs</h5>
+                                    <h5 class="price"> ₱110 </h5>
+                                </div>
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                
+                        <div class="food-items">
+                            <img src="food/frenchtoast.png">
+                            <div class="details">
+                                <div class="details-sub">
+                                    <h5>French Toast</h5>
+                                    <h5 class="price"> ₱100 </h5>
+                                </div>
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                
+                        <div class="food-items">
+                            <img src="food/Pancake.png">
+                            <div class="details">
+                                <div class="details-sub">
+                                    <h5>Pancake</h5>
+                                    <h5 class="price"> ₱100 </h5>
+                                </div>
+                               <button>Add To Cart</button>
+                            </div>
+                        </div>
+                
+                        <div class="food-items">
+                            <img src="food/waffles.png">
+                            <div class="details">
+                                <div class="details-sub">
+                                    <h5>Waffles</h5>
+                                    <h5 class="price"> ₱110 </h5>
+                                </div>
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                
+                        <div class="food-items">
+                            <img src="food/Salad.png">
+                            <div class="details">
+                                <div class="details-sub">
+                                    <h5>Salad</h5>
+                                    <h5 class="price"> ₱200 </h5>
+                                </div>
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                          <img src="food/Longsilog.png">
+                          <div class="details">
+                              <div class="details-sub">
+                                  <h5>Longsilog</h5>
+                                  <h5 class="price"> ₱120 </h5>
+                              </div>
+                              <button>Add To Cart</button>
+                          </div>
+                      </div>
+
+                      <div class="food-items">
+                        <img src="food/tapasilog.png">
+                        <div class="details">
+                            <div class="details-sub">
+                                <h5>Tapsilog</h5>
+                                <h5 class="price"> ₱120 </h5>
+                            </div>
+                            <button>Add To Cart</button>
+                        </div>
+                    </div>
+
+                          <div class="food-items">
+                            <img src="food/bacsilog.png">
+                            <div class="details">
+                                <div class="details-sub">
+                                    <h5>Bacsilof</h5>
+                                    <h5 class="price"> ₱120 </h5>
+                                </div>
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="food-items">
+                          <img src="food/Tosilog.png">
+                          <div class="details">
+                              <div class="details-sub">
+                                  <h5>Tosilog</h5>
+                                  <h5 class="price"> ₱120 </h5>
+                              </div>
+                              <button>Add To Cart</button>
+                          </div>
+                      </div>
+
+
+                      <div class="food-items">
+                        <img src="food/embosilog.png">
+                        <div class="details">
+                            <div class="details-sub">
+                                <h5>Embosilog</h5>
+                                <h5 class="price"> ₱120 </h5>
+                            </div>
+                            <button>Add To Cart</button>
+                        </div>
+                    </div>
+
+
+                    <div class="food-items">
+                      <img src="food/american.png">
+                      <div class="details">
+                          <div class="details-sub">
+                              <h5>American Breakfast</h5>
+                              <h5 class="price"> ₱200 </h5>
+                          </div>
+                         <button>Add To Cart</button>
+                      </div>
+                  </div>
+
+          </div>
+
+            <hr>
+
+             <!--Lunch or Dinner--->
+             <h3 class="break">Lunch or Dinner? </h3>
+
+             <div class="menu">
+
+
+                 <div class="food-items">
+                          <img src="food/Bistek.png">
+                          <div class="details">
+                              <div class="details-sub">
+                                  <h5>Bistek</h5>
+                                  <h5 class="price"> ₱250 </h5>
+                              </div>
+                              <button>Add To Cart</button>
+                          </div>
+                      </div>
+              
+                      <div class="food-items">
+                          <img src="food/karekare.png">
+                          <div class="details">
+                              <div class="details-sub">
+                                  <h5>Kare-Kare</h5>
+                                  <h5 class="price"> ₱350 </h5>
+                              </div>
+                              <button>Add To Cart</button>
+                          </div>
+                      </div>
+              
+                      <div class="food-items">
+                          <img src="food/Meatballs.png">
+                          <div class="details">
+                              <div class="details-sub">
+                                  <h5>Meatballs</h5>
+                                  <h5 class="price"> ₱150 </h5>
+                              </div>
+                              <button>Add To Cart</button>
+                          </div>
+                      </div>
+              
+                      <div class="food-items">
+                          <img src="food/Caldereta.png">
+                          <div class="details">
+                              <div class="details-sub">
+                                  <h5>Beef Caldereta</h5>
+                                  <h5 class="price"> ₱300 </h5>
+                              </div>
+                            <button>Add To Cart</button>
+                          </div>
+                      </div>
+              
+                      <div class="food-items">
+                          <img src="food/sweetandsour.png">
+                          <div class="details">
+                              <div class="details-sub">
+                                  <h5>Sweet & Sour</h5>
+                                  <h5 class="price"> ₱250 </h5>
+                              </div>
+                              <button>Add To Cart</button>
+                          </div>
+                      </div>
+              
+                      <div class="food-items">
+                          <img src="food/Salad.png">
+                          <div class="details">
+                              <div class="details-sub">
+                                  <h5>Salad</h5>
+                                  <h5 class="price"> ₱200 </h5>
+                              </div>
+                              <button>Add To Cart</button>
+                          </div>
+                      </div>
+
+                      <div class="food-items">
+                        <img src="food/Bualo.png">
+                        <div class="details">
+                            <div class="details-sub">
+                                <h5>Bulalo</h5>
+                                <h5 class="price"> ₱500 </h5>
+                            </div>
+                            <button>Add To Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="food-items">
+                      <img src="food/bayback.png">
+                      <div class="details">
+                          <div class="details-sub">
+                              <h5>Babyback Ribs</h5>
+                              <h5 class="price"> ₱400 </h5>
+                          </div>
+                          <button>Add To Cart</button>
+                      </div>
+                  </div>
+
+                        <div class="food-items">
+                          <img src="food/beefsteak.png">
+                          <div class="details">
+                              <div class="details-sub">
+                                  <h5>Beefsteak</h5>
+                                  <h5 class="price"> ₱800 </h5>
+                              </div>
+                              <button>Add To Cart</button>
+                          </div>
+                      </div>
+
+                      <div class="food-items">
+                        <img src="food/porkbbq.png">
+                        <div class="details">
+                            <div class="details-sub">
+                                <h5>Pork BBQ</h5>
+                                <h5 class="price"> ₱150 </h5>
+                            </div>
+                            <button>Add To Cart</button>
+                        </div>
+                    </div>
+
+
+                    <div class="food-items">
+                      <img src="food/Porkchop.png">
+                      <div class="details">
+                          <div class="details-sub">
+                              <h5>Porkchop</h5>
+                              <h5 class="price"> ₱220 </h5>
+                          </div>
+                          <button>Add To Cart</button>
+                      </div>
+                  </div>
+
+
+                  <div class="food-items">
+                    <img src="food/grilledliempo.png">
+                    <div class="details">
+                        <div class="details-sub">
+                            <h5>Grilled Liempo</h5>
+                            <h5 class="price"> ₱280 </h5>
+                        </div>
+                      <button>Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="food-items">
+                  <img src="food/adobo.png">
+                  <div class="details">
+                      <div class="details-sub">
+                          <h5>Adobo</h5>
+                          <h5 class="price"> ₱300 </h5>
+                      </div>
+                    <button>Add To Cart</button>
+                  </div>
+              </div>
+
+
+        </div>
+
+
+
+                          <hr>
+
+                        <!--Snacks and sweets-->
+                          <h3 class="break">Snacks and Sweets </h3>
+
+                          <div class="menu" id="snacks">
+
+
+                              <div class="food-items">
+                                      <img src="food/Brownies.png">
+                                      <div class="details">
+                                          <div class="details-sub">
+                                              <h5>Brownies</h5>
+                                              <h5 class="price"> ₱150 </h5>
+                                          </div>
+                                          <button>Add To Cart</button>
+                                      </div>
+                                  </div>
+                          
+                                  <div class="food-items">
+                                      <img src="food/cookies.png">
+                                      <div class="details">
+                                          <div class="details-sub">
+                                              <h5>Choco Chips</h5>
+                                              <h5 class="price"> ₱150 </h5>
+                                          </div>
+                                          <button>Add To Cart</button>
+                                      </div>
+                                  </div>
+                          
+                                  <div class="food-items">
+                                      <img src="food/chococup.png">
+                                      <div class="details">
+                                          <div class="details-sub">
+                                              <h5>Choco Cupcake</h5>
+                                              <h5 class="price"> ₱180 </h5>
+                                          </div>
+                                          <button>Add To Cart</button>
+                                      </div>
+                                  </div>
+                          
+                                  <div class="food-items">
+                                      <img src="food/cheezycake.png">
+                                      <div class="details">
+                                          <div class="details-sub">
+                                              <h5>Cheezy Cupcake</h5>
+                                              <h5 class="price"> ₱140 </h5>
+                                          </div>
+                                        <button>Add To Cart</button>
+                                      </div>
+                                  </div>
+                          
+                          
+                                  <div class="food-items">
+                                      <img src="food/Chantilly.png">
+                                      <div class="details">
+                                          <div class="details-sub">
+                                              <h5>Chantilly</h5>
+                                              <h5 class="price"> ₱200 </h5>
+                                          </div>
+                                          <button>Add To Cart</button>
+                                      </div>
+                                  </div>
+
+                                  <div class="food-items">
+                                    <img src="food/Biko.png">
+                                    <div class="details">
+                                        <div class="details-sub">
+                                            <h5>Biko</h5>
+                                            <h5 class="price"> ₱150 </h5>
+                                        </div>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+
+                                <div class="food-items">
+                                  <img src="food/Palabok.png">
+                                  <div class="details">
+                                      <div class="details-sub">
+                                          <h5>Palabok</h5>
+                                          <h5 class="price"> ₱250 </h5>
+                                      </div>
+                                      <button>Add To Cart</button>
+                                  </div>
+                              </div>
+
+                                    <div class="food-items">
+                                      <img src="food/Pancit Canton.png">
+                                      <div class="details">
+                                          <div class="details-sub">
+                                              <h5>Pancit Canton</h5>
+                                              <h5 class="price"> ₱220 </h5>
+                                          </div>
+                                          <button>Add To Cart</button>
+                                      </div>
+                                  </div>
+
+                                  <div class="food-items">
+                                    <img src="food/Carbonara.png">
+                                    <div class="details">
+                                        <div class="details-sub">
+                                            <h5>Carbonara</h5>
+                                            <h5 class="price"> ₱250 </h5>
+                                        </div>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+
+
+                                <div class="food-items">
+                                  <img src="food/spag.png">
+                                  <div class="details">
+                                      <div class="details-sub">
+                                          <h5>Spaghetti</h5>
+                                          <h5 class="price"> ₱220 </h5>
+                                      </div>
+                                      <button>Add To Cart</button>
+                                  </div>
+                              </div>
+
+
+                              <div class="food-items">
+                                <img src="food/meatyspag.png">
+                                <div class="details">
+                                    <div class="details-sub">
+                                        <h5>Meaty Spaghetti</h5>
+                                        <h5 class="price"> ₱280 </h5>
+                                    </div>
+                                  <button>Add To Cart</button>
+                                </div>
+                            </div>
+
+                            <div class="food-items">
+                              <img src="food/Lasagna.png">
+                              <div class="details">
+                                  <div class="details-sub">
+                                      <h5>Lasagna</h5>
+                                      <h5 class="price"> ₱250 </h5>
+                                  </div>
+                                <button>Add To Cart</button>
+                              </div>
+                          </div>
+
+                          <div class="food-items">
+                            <img src="food/Burger.png">
+                            <div class="details">
+                                <div class="details-sub">
+                                    <h5>Burger</h5>
+                                    <h5 class="price"> ₱200 </h5>
+                                </div>
+                              <button>Add To Cart</button>
+                            </div>
+                        </div>
+
+
+                        <div class="food-items">
+                          <img src="food/Fries.png">
+                          <div class="details">
+                              <div class="details-sub">
+                                  <h5>French Fries</h5>
+                                  <h5 class="price"> ₱150 </h5>
+                              </div>
+                            <button>Add To Cart</button>
+                          </div>
+                      </div>
+
+
+
+                      <div class="food-items">
+                        <img src="food/Nachos.png">
+                        <div class="details">
+                            <div class="details-sub">
+                                <h5>Nachos</h5>
+                                <h5 class="price"> ₱150 </h5>
+                            </div>
+                          <button>Add To Cart</button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="food-items">
+                      <img src="food/Hotdog.png">
+                      <div class="details">
+                          <div class="details-sub">
+                              <h5>Hotdog Bun</h5>
+                              <h5 class="price"> ₱100 </h5>
+                          </div>
+                        <button>Add To Cart</button>
+                      </div>
+                  </div>
+
+
+
+                    </div>
+
+
+             
+
+            
+      <!--Footer-->
+  <footer style="background-color: orange;">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4">
+          <h5 class="mb-3 text-dark">footer content</h5>
+          <p>
+            We offer full-service catering for any event, large or small. 
+            We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. 
+            Do not hesitate to visit us here: <br>
+            <i class="bi bi-geo-alt-fill"></i> <strong>ABSFI Canteen, Busco,
+              Butong, Quezon, Philippines, 8710</strong>
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-3 text-dark">follow us</h5>
+          <a href="https://www.facebook.com/conniesltngbhy/" target="_blank" style="color: #4f4f4f;"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/conniesltngbhy/" target="_blank" style="color: #4f4f4f;"><i class="bi bi-instagram"></i></a>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-1 text-dark">Store Hours</h5>
+          <table class="table" style="border-color: #666;">
+            <tbody>
+              <tr>
+                <td>Mon - Fri:</td>
+                <td>8:00 AM - 6:00 PM</td>
+              </tr>
+              <tr>
+                <td>Sat - Sun:</td>
+                <td>8:00 AM - 5:00 PM</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2016 Copyright:
+      <a class="text-dark" href="#">Connie's Lutong Bahay</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  
+
+  <script>
+    $(document).ready(function(){
+      $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $(".dropdown-menu li").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+    </script>
+
+  
+</body>
+
+</html>
