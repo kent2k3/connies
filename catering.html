@@ -1,124 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Connie's Lutong Bahay</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="menufinal.css">
-  
-
-  <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("W6Aghwe1jY2gmknl5");
-   })();
-</script>
- </head>
-
-    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>Home | Connie's Lutong Ulam</title>
+</head>
 <body>
-
-
-  <!-- Messenger Chat Plugin Code -->
-  <div id="fb-root"></div>
-
-  <!-- Your Chat Plugin code -->
-  <div id="fb-customer-chat" class="fb-customerchat">
-  </div>
-
-  <script>
-    var chatbox = document.getElementById('fb-customer-chat');
-    chatbox.setAttribute("page_id", "1183488598450605");
-    chatbox.setAttribute("attribution", "biz_inbox");
-  </script>
-
-  <!-- Your SDK code -->
-  <script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        xfbml            : true,
-        version          : 'v16.0'
-      });
-    };
-
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
-
-
-       <!--Navbar--->
-       <div class="superNav border-bottom py-2 bg-light">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 centerOnMobile">
-              <span class="d-none d-lg-inline-block d-md-inline-block d-sm-inline-block d-xs-none me-3 "><i class="bi bi-envelope-fill w3-text-orange"></i><strong> connies@gmail.com</strong></span>
-              <span class="me-3"><i class="bi bi-telephone-fill w3-text-orange"></i> <strong>+63 995-941-3733</strong></span>
-            </div>
-    
-          </div>
-        </div>
+    <!--NavBar Start-->
+  <nav class="navbar sticky-top navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/logo.svg" alt="connies logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="HomeNavBar" aria-expanded="false" aria-label="Toggle Navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="catering.html">Catering</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
       </div>
-      <nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light p-3 shadow-sm">
-        <div class="container">
-          <a class="navbar-brand w3-text-orange" href="index.html"><i class="bi bi-shop-window"></i> <strong>CONNIE'S</strong></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      
-                <div class="mx-auto my-3 d-lg-none d-sm-block d-xs-block w3-hide-small">
-                  <div class="input-group">
-                    <span class="border-warning input-group-text bg-warning text-white"><i class="fa-solid fa-magnifying-glass"></i></span>
-                    <input type="text" class="form-control border-warning" style="color:#7a7a7a">
-                    <button class="btn btn-warning text-white">Search</button>
-                  </div>
-                </div>
-                <div class=" collapse navbar-collapse" id="navbarNavDropdown">
-                  <div class="ms-auto d-none d-lg-block">
-                    <div class="input-group">
-    
-                    </div>
-                  </div>
-                  <ul class="navbar-nav ms-auto ">
-                  
-                    <li class="nav-item">
-                      <a class="nav-link mx-2 text-uppercase" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link mx-2 text-uppercase" href="aboutUS.html">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link mx-2 text-uppercase" href="pageMenu.html">MENU</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link mx-2 text-uppercase" href="catering.html">CATERING</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link mx-2 text-uppercase" href="contactus.html">CONTACT US</a>
-                    </li>
-                  </ul>
-                  <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                      <a class="nav-link mx-2 text-uppercase" href="#"><i class="bi bi-cart"></i> Cart</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link mx-2 text-uppercase" href="#"><i class="bi bi-person-circle"></i> Account</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
+    </div>
+  </nav>
 
 
             
@@ -199,80 +123,61 @@
 
 
             
-      <!--Footer-->
-  <footer style="background-color: orange;">
+<!---Footer Start-->
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container-fluid">
+  <footer style="background-color: #fd761f; border-radius: 10px;">
     <div class="container p-4">
       <div class="row">
         <div class="col-lg-6 col-md-12 mb-4">
-          <h5 class="mb-3 text-dark">footer content</h5>
-          <p>
-            We offer full-service catering for any event, large or small. 
-            We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. 
-            Do not hesitate to visit us here: <br>
-            <i class="bi bi-geo-alt-fill"></i> <strong>ABSFI Canteen, Busco,
-              Butong, Quezon, Philippines, 8710</strong>
+          <h5 class="mb-3 fw-bold" style="color: white">About Connie's Lutong Ulam</h5>
+          <p style="color: white">
+            Experience the authentic taste of the Philippines with Connie's Lutong Ulam. Our locally-sourced ingredients and traditional cooking techniques bring the bold and flavorful tastes of Filipino cuisine straight to your plate.
           </p>
         </div>
         <div class="col-lg-3 col-md-6 mb-4">
-          <h5 class="mb-3 text-dark">follow us</h5>
-          <a href="https://www.facebook.com/conniesltngbhy/" target="_blank" style="color: #4f4f4f;"><i class="bi bi-facebook"></i></a>
-          <a href="https://www.instagram.com/conniesltngbhy/" target="_blank" style="color: #4f4f4f;"><i class="bi bi-instagram"></i></a>
+          <h5 class="mb-3 fw-bold" style="color: white">Useful Links</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-1">
+              <a href="/" style="color: white;">Home</a> 
+            </li>
+            <li class="mb-1">
+              <a href="menu.html" style="color: white;">Menu</a>
+            </li>
+            <li class="mb-1">
+              <a href="catering.html" style="color: white;">Catering</a>
+            </li>
+            <li>
+              <a href="contact.html"style="color: white;">Contact Us</a>
+            </li>
+          </ul>
         </div>
-        
         <div class="col-lg-3 col-md-6 mb-4">
-          <h5 class="mb-1 text-dark">Store Hours</h5>
-          <table class="table" style="border-color: #666;">
+          <h5 class="mb-1 fw-bold" style="color: white">Opening Hours</h5>
+          <table class="table" style="border-color: white; color: white">
             <tbody>
               <tr>
                 <td>Mon - Fri:</td>
-                <td>8:00 AM - 6:00 PM</td>
+                <td>8am - 9pm</td>
               </tr>
               <tr>
                 <td>Sat - Sun:</td>
-                <td>8:00 AM - 5:00 PM</td>
+                <td>8am - 1am</td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
     </div>
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2016 Copyright:
-      <a class="text-dark" href="#">Connie's Lutong Bahay</a>
+    <div class="text-center p-3" style="color: white ">
+    Copyright © 2023
+      <a class="fs-5" href="/" style="color: white; text-decoration: none;">Connie's Lutong Ulam</a>
     </div>
     <!-- Copyright -->
   </footer>
-   
-  <script>
-    function sendEmail(){
-        var params = {
-            name: document.getElementById("name").value,
-            Phonenumber: document.getElementById("phone").value,
-            email: document.getElementById("email").value,
-            people: document.getElementById("people").value,
-            datetime: document.getElementById("datetime").value,
-            message: document.getElementById("message").value,  
-        };
-      
-
-      const serviceID = "service_3ei4w7i"
-      const templateID = "template_1iktnht"
-
-      emailjs.send(serviceID,templateID,params).then((res) => {
-        document.getElementById("name").value = "",
-        document.getElementById("Phonenumber").value = "",
-        document.getElementById("email").value = "",
-        document.getElementById("datetime").value = "",
-        document.getElementById("people").value = "",
-        document.getElementById("message").value = "", 
-        console.log(res);
-        alert("message sent");
-
-      })
-      .catch((err) => console.log(err))
-    }
-
-</script>
+  
+</div>
+<!-- End of .container -->
   
 </body>
 
