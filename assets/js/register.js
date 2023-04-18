@@ -17,66 +17,38 @@
           appId: "1:489988473507:web:ea21ceec5c661f23963516"
         };
       
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const database = getDatabase(app);
-        const auth = getAuth();
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const database = getDatabase(app);
+const auth = getAuth();
 
+var form = document.getElementById("registerNow");
 
-const signUpForm = document.getElementById('registerNow');
-
-signUpForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const firstName = signUpForm.firstName.value;
-  const lastName = signUpForm.lastName.value;
-  const email = signUpForm.email.value;
-  const password = signUpForm.password.value;
-
-  // Get the current date in mm-dd-yyyy format
-  const registeredAt = new Date().toLocaleDateString('en-US');
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
   
+  var firstName = document.getElementById("firstName").value;
+  var lastName = document.getElementById("lastName").value;
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+
+  // Create a new user with email and password
   createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
+      // Write the user's data to the database
       const user = userCredential.user;
-      //send to the database
-      set(ref(database, `users/${user.uid}`), {
-        email: email,
-        registeredAt: registeredAt,
+      set(ref(database, 'users/' + user.uid), {
         firstName: firstName,
-        lastName: lastName
-      })
-      .then(() => {
-        // Clear the form inputs
-        signUpForm.firstName.value = '';
-        signUpForm.lastName.value = '';
-        signUpForm.email.value = '';
-        signUpForm.password.value = '';
-
-        // Display success message
-        const alert = document.createElement('div');
-        alert.className = 'alert alert-success mt-3';
-        alert.setAttribute('role', 'alert');
-        alert.innerText = 'Registration successful!';
-
-        // Redirect to login page
-        setTimeout(() => {
-          window.location.href = '/';
-        }, 2000);
-      })
-      .catch((error) => {
-        // Display error message
-        const alert = document.createElement('div');
-        alert.className = 'alert alert-danger mt-3';
-        alert.setAttribute('role', 'alert');
-        alert.innerText = error.message;
-
+        lastName: lastName,
+        email: email
       });
     })
     .catch((error) => {
-      // Display error message
-      const alert = document.createElement('div');
-      alert.className = 'alert alert-danger mt-3';
-      alert.setAttribute('role', 'alert');
-      alert.innerText = error.message;
+      var errorMessage = error.message;
+      console.log(errorMessage);
     });
+  
+  // Reset the form
+  form.reset();
 });
+        
