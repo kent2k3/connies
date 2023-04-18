@@ -30,3 +30,16 @@
     color: #fd761f;
     text-decoration: none;
 }
+
+.btn {
+    background-color: #fd761f;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    font-weight: 900;
+}
+
+.btn:hover {
+    border-color: #fd761f;
+    color: #fd761f;
+    transform: scale(1.2);
+}
